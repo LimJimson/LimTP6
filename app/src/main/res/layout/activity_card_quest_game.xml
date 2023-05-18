@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardQuestGame"
+    android:background="@drawable/bg">
+    <ImageButton
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_margin="20dp"
+        android:background="@drawable/menu"
+        android:onClick="backToTitleScreen"/>
+
+    <ImageButton
+        android:id="@+id/btnRestartGame"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/restart"
+        />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/CardGridViewStyle"
+        />
+
+</RelativeLayout>
